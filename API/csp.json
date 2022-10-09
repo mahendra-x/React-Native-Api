@@ -1,0 +1,696 @@
+{
+	"info": {
+		"_postman_id": "7287cdcf-0022-4165-bbaf-30388f78791d",
+		"name": "CSPRequestedCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AccountStatements",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "EnterpriseId",
+							"value": "harshenterprise",
+							"type": "text"
+						},
+						{
+							"key": "TenantId",
+							"value": "aa774ceb-6c0f-4980-9ea0-2adad2ea8338",
+							"type": "text"
+						},
+						{
+							"key": "UserTableId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "UserId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "FromDate",
+							"value": "09/09/2019",
+							"type": "text"
+						},
+						{
+							"key": "ToDate",
+							"value": "09/09/2023",
+							"type": "text"
+						},
+						{
+							"key": "CustomerId",
+							"value": "5c841684-9d04-43de-9191-67ca84d2faae",
+							"type": "text"
+						},
+						{
+							"key": "ShowLineLevelNarration",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "ShowBillRef",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "ShowNarration",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "CurrencySymbol",
+							"value": "Rs",
+							"type": "text"
+						},
+						{
+							"key": "AccountName",
+							"value": "FLIPKART",
+							"type": "text"
+						},
+						{
+							"key": "OutputFormate",
+							"value": "both",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app2.ziperp.net/api/CommonAPI/ZIPSFA/SFAAccountReports/AccountStatements",
+					"protocol": "https",
+					"host": [
+						"app2",
+						"ziperp",
+						"net"
+					],
+					"path": [
+						"api",
+						"CommonAPI",
+						"ZIPSFA",
+						"SFAAccountReports",
+						"AccountStatements"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CSPLogin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "EnterpriseId",
+							"value": "harshenterprise",
+							"type": "text"
+						},
+						{
+							"key": "UserId",
+							"value": "demo",
+							"type": "text"
+						},
+						{
+							"key": "Password",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "TenantId",
+							"value": "aa774ceb-6c0f-4980-9ea0-2adad2ea8338",
+							"type": "text"
+						},
+						{
+							"key": "Location",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "DeviceId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "UserToken",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "MobileAppVersion",
+							"value": "60.0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app2.ziperp.net/api/CommonAPI/ZIPSFA/SFACSPLogin/CSPLogin",
+					"protocol": "https",
+					"host": [
+						"app2",
+						"ziperp",
+						"net"
+					],
+					"path": [
+						"api",
+						"CommonAPI",
+						"ZIPSFA",
+						"SFACSPLogin",
+						"CSPLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sales Invoice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "EnterpriseId",
+							"value": "harshenterprise",
+							"type": "text"
+						},
+						{
+							"key": "TenantId",
+							"value": "aa774ceb-6c0f-4980-9ea0-2adad2ea8338",
+							"type": "text"
+						},
+						{
+							"key": "UserTableId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "UserId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Location",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "jtStartIndex",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "jtPageSize",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "jtSorting",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Filters",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "YearKey",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "SalesExecutiveId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "CSPUserId",
+							"value": "678d21a7-35f7-42ab-8ed9-e087c2a9efa1",
+							"type": "text"
+						},
+						{
+							"key": "IsAdmin",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "TransactionCode",
+							"value": "SIASD",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app2.ziperp.net/api/CommonAPI/ZIPSFA/SFASalesInvoice/ListSI",
+					"protocol": "https",
+					"host": [
+						"app2",
+						"ziperp",
+						"net"
+					],
+					"path": [
+						"api",
+						"CommonAPI",
+						"ZIPSFA",
+						"SFASalesInvoice",
+						"ListSI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CSPItemProductGroupList",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "EnterpriseId",
+							"value": "harshenterprise",
+							"type": "text"
+						},
+						{
+							"key": "TenantId",
+							"value": "aa774ceb-6c0f-4980-9ea0-2adad2ea8338",
+							"type": "text"
+						},
+						{
+							"key": "CustomerPriceListId",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app2.ziperp.net/api/CommonAPI/ZIPSFA/SFACSP/CSPItemProductGroupList",
+					"protocol": "https",
+					"host": [
+						"app2",
+						"ziperp",
+						"net"
+					],
+					"path": [
+						"api",
+						"CommonAPI",
+						"ZIPSFA",
+						"SFACSP",
+						"CSPItemProductGroupList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Online Order(CSP)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "EnterpriseId",
+							"value": "ZipERP_0001",
+							"type": "text"
+						},
+						{
+							"key": "TenantId",
+							"value": "0782abba-b183-4b3d-baa4-c0bf3190e756",
+							"type": "text"
+						},
+						{
+							"key": "UserId",
+							"value": "demo@demo.com",
+							"type": "text"
+						},
+						{
+							"key": "UserTableId",
+							"value": "781A96C2-8347-4070-B8D8-8F3D36DA0B83",
+							"type": "text"
+						},
+						{
+							"key": "CustomerId",
+							"value": "781A96C2-8347-4070-B8D8-8F3D36DA0B83",
+							"type": "text"
+						},
+						{
+							"key": "Json_ItemTransData",
+							"value": "[\n  {\n    \"ItemId\": \"039c19f5-71d7-4c5a-b4dc-441c868164c6\",\n    \"Qty\": 5.0\n  }\n]",
+							"type": "text"
+						},
+						{
+							"key": "CurrencyId",
+							"value": "2dca24ef-b369-4907-aed0-3542a9d0b69c",
+							"type": "text"
+						},
+						{
+							"key": "RetailCust_MobileNo",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "RetailCust_Name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "RetailCust_PhoneNo",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "RetailCust_EmailId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "RetailCust_Address",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "RetailCust_AreaId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "RetailCust_RegionId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "RetailCust_TerritoryId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "CSPUserId",
+							"value": "781A96C2-8347-4070-B8D8-8F3D36DA0B83",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://app.accusol.com/ziperp/api/CommonAPI/ZIPSFA/SFAOnlineOrder/SendOrder",
+					"protocol": "http",
+					"host": [
+						"app",
+						"accusol",
+						"com"
+					],
+					"path": [
+						"ziperp",
+						"api",
+						"CommonAPI",
+						"ZIPSFA",
+						"SFAOnlineOrder",
+						"SendOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Outstanding",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "EnterpriseId",
+							"value": "harshenterprise",
+							"type": "text"
+						},
+						{
+							"key": "TenantId",
+							"value": "aa774ceb-6c0f-4980-9ea0-2adad2ea8338",
+							"type": "text"
+						},
+						{
+							"key": "UserTableId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "UserId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Location",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "23/02/2023",
+							"type": "text"
+						},
+						{
+							"key": "CustomerId",
+							"value": "'5c841684-9d04-43de-9191-67ca84d2faae'",
+							"type": "text"
+						},
+						{
+							"key": "AgentId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "BillType",
+							"value": "P",
+							"type": "text"
+						},
+						{
+							"key": "ReportType",
+							"value": "D",
+							"type": "text"
+						},
+						{
+							"key": "FyFrom",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "FyTo",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "BusinessAreaId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "OutputFormate",
+							"value": "both",
+							"type": "text"
+						},
+						{
+							"key": "CSPUserId",
+							"value": "5c841684-9d04-43de-9191-67ca84d2faae",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app2.ziperp.net/api/CommonAPI/ZIPSFA/SFAAccountReports/CustomerOutstanding",
+					"protocol": "https",
+					"host": [
+						"app2",
+						"ziperp",
+						"net"
+					],
+					"path": [
+						"api",
+						"CommonAPI",
+						"ZIPSFA",
+						"SFAAccountReports",
+						"CustomerOutstanding"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Online Order Monitoring",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "EnterpriseId",
+							"value": "harshenterprise",
+							"description": "Mandatory",
+							"type": "text"
+						},
+						{
+							"key": "TenantId",
+							"value": "aa774ceb-6c0f-4980-9ea0-2adad2ea8338",
+							"description": "Mandatory",
+							"type": "text"
+						},
+						{
+							"key": "ObjectType",
+							"value": "OnlineOrderMaster",
+							"description": "Use for log entry",
+							"type": "text"
+						},
+						{
+							"key": "jtStartIndex",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "jtPageSize",
+							"value": "10",
+							"description": "Use for log entry",
+							"type": "text"
+						},
+						{
+							"key": "jtSorting",
+							"value": "",
+							"description": "Mandatory",
+							"type": "text"
+						},
+						{
+							"key": "Filters",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "CSPUserId",
+							"value": "678d21a7-35f7-42ab-8ed9-e087c2a9efa1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://app2.ziperp.net/api/CommonAPI/ZIPSFA/SFAOnlineOrder/OnlineOrderMonitoring",
+					"protocol": "https",
+					"host": [
+						"app2",
+						"ziperp",
+						"net"
+					],
+					"path": [
+						"api",
+						"CommonAPI",
+						"ZIPSFA",
+						"SFAOnlineOrder",
+						"OnlineOrderMonitoring"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ViewOnlineOrder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "EnterpriseId",
+							"value": "ZipERP_0001",
+							"type": "text"
+						},
+						{
+							"key": "TenantId",
+							"value": "0782abba-b183-4b3d-baa4-c0bf3190e756",
+							"type": "text"
+						},
+						{
+							"key": "UserTableId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "UserId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Location",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "OrderId",
+							"value": "7694dd21-fcc1-420f-af0f-f812cd03a7c7",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://app.accusol.com/ziperp/api/CommonAPI/ZIPSFA/SFAOnlineOrder/ViewOnlineOrder",
+					"protocol": "http",
+					"host": [
+						"app",
+						"accusol",
+						"com"
+					],
+					"path": [
+						"ziperp",
+						"api",
+						"CommonAPI",
+						"ZIPSFA",
+						"SFAOnlineOrder",
+						"ViewOnlineOrder"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
